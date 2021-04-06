@@ -1,0 +1,1 @@
+export const ST_API = 'http://localhost:3000'

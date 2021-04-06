@@ -1,0 +1,188 @@
+{
+  "toppings": [
+    {
+      "id": 1,
+      "type": "vegetais",
+      "items": [
+        "brócolis",
+        "cogumelo",
+        "azeitona verde",
+        "pimentão",
+        "jalapeño",
+        "abacaxi",
+        "azeitona preta",
+        "cebola roxa",
+        "cebola",
+        "tomate",
+        "milho",
+        "palmito",
+        "manjericão"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "carnes",
+      "items": [
+        "pedaços de bacon",
+        "tiras de bacon",
+        "tiras de frango grelhado",
+        "presunto",
+        "pepperoni",
+        "calabresa",
+        "salami",
+        "linguiça"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "queijos",
+      "items": [
+        "mussarela",
+        "gorgonzola",
+        "cream cheese",
+        "mussarela de búfala",
+        "parmesão",
+        "provolone",
+        "cheddar",
+        "catupiry"
+      ]
+    }
+  ],
+  "doughTypes": [
+    {
+      "id": 1,
+      "doughName": "normal",
+      "description": "Nossa tradicional massa artesanal feita com muito carinho."
+    },
+    {
+      "id": 2,
+      "doughName": "fininha",
+      "description": "Pra quem o importante mesmo é o recheio"
+    },
+    {
+      "id": 3,
+      "doughName": "grossa",
+      "description": "Para aqueles que comem até as bordas da pizza dos amigos"
+    },
+    {
+      "id": 4,
+      "doughName": "pan",
+      "description": "Massa especial assada em forma alta pra quem quer ter um experiência única."
+    }
+  ],
+  "extras": [
+    {
+      "id": 1,
+      "type": "borda",
+      "items": [
+        "sem borda",
+        "borda de catupiry",
+        "borda de calabresa",
+        "borda de cream cheese",
+        "borda de requeijão",
+        "borda de cheddar"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "temperos e molhos por cima",
+      "items": [
+        "oregano",
+        "tempero italiano",
+        "barbecue",
+        "pimenta calabresa",
+        "molho picante",
+        "azeite"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "condimentos (sachês)",
+      "items": [
+        "sachês de ketchup",
+        "sachês de maionese",
+        "sachês de mostarda"
+      ]
+    }
+  ],
+  "pizzaOfTheDay": [
+    {
+      "imgLabel": "Segunda - 4 Queijos",
+      "imgUrl": "assets/img/pizza/4-queijos.jpg",
+      "day": 1,
+      "toppings": [
+        "mussarela",
+        "gorgonzola",
+        "parmesão",
+        "provolone"
+      ]
+    },
+    {
+      "imgLabel": "Terça - Pepperone",
+      "imgUrl": "assets/img/pizza/pepperone.jpg",
+      "day": 2,
+      "toppings": [
+        "mussarela",
+        "pepperoni"
+      ]
+    },
+    {
+      "imgLabel": "Quarta - Marguerita",
+      "imgUrl": "assets/img/pizza/margherita.jpg",
+      "day": 3,
+      "toppings": [
+        "mussarela de búfala",
+        "manjericão",
+        "tomate"
+      ]
+    },
+    {
+      "imgLabel": "Quinta - Veggie",
+      "imgUrl": "assets/img/pizza/veggie.jpg",
+      "day": 4,
+      "toppings": [
+        "tomate",
+        "cebola roxa",
+        "milho",
+        "pimentão",
+        "cogumelo"
+      ]
+    },
+    {
+      "imgLabel": "Sexta - Calabresa",
+      "imgUrl": "assets/img/pizza/calabresa.jpg",
+      "day": 5,
+      "toppings" : [
+        "mussarela",
+        "calabresa"
+      ]
+    },
+    {
+      "imgLabel": "Sábado - Havaiana",
+      "imgUrl": "assets/img/pizza/havaiana.jpg",
+      "day": 6,
+      "toppings": [
+        "mussarela",
+        "abacaxi",
+        "pimentão",
+        "cream cheese"
+      ]
+    },
+    {
+      "imgLabel": "Domingo - Caliente",
+      "imgUrl": "assets/img/pizza/caliente.jpg",
+      "day": 0,
+      "toppings": [
+        "mussarela",
+        "cebola",
+        "jalapeño",
+        "manjericão"
+      ]
+    }
+  ],
+  "pontosBeneficio": [
+    {
+      "pizzaDoDia" : "10"
+    }
+  ]
+}

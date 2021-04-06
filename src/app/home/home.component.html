@@ -1,0 +1,15 @@
+<h4>Descubra a   pizza do dia</h4>
+<div class="w-100 d-flex justify-content-center m-2">
+</div>
+<ngb-carousel id="carousel" *ngIf="dailyPizzas">
+    <ng-template *ngFor="let pizza of dailyPizzas" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="pizza.imgUrl" loading="lazy" alt="Random first slide" (click)="handleClick(pizza)">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{pizza.imgLabel}}</h3>
+        <p *ngIf="pizza.day === currentDay"><strong>Escolha hoje e ganhe pontos!</strong></p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <small>Escolha a pizza de <strong>{{hoje}}</strong> e ganhe pontos de benefício!</small>

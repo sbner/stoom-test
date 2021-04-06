@@ -1,0 +1,28 @@
+.capitalize {
+    text-transform: capitalize;
+}
+
+.selected {
+    border: 2px solid green;
+}
+
+.checkIcon {
+    color: green
+}
+
+label:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+input[type="radio"]{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}

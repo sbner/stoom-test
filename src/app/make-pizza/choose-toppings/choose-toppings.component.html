@@ -1,0 +1,18 @@
+<div *ngIf="!inputDisabled; else elseBlock" class="mb-4">Escolha os ingredientes:</div>
+<ng-template #elseBlock>
+    <div class="mb-4"><strong>Você não pode modificar os ingredientes da pizza do dia</strong></div>
+</ng-template>
+<form #form="ngForm" (change)="handleFormChange(form.value)">
+    <div class="row">
+        <div *ngFor="let topping of toppings" class="col-sm border-left d-flex flex-column">
+            <div class="mb-2 capitalize border-bottom"><h6>{{topping.type}}</h6></div>
+            <div *ngFor="let item of topping.items">
+                <label class="capitalize d-flex p-1 rounded justify-content-between" [class.hover]="!inputDisabled" [class.selected]="selected.includes(item) || stored.includes(item)">
+                    {{item}}
+                    <input [disabled]='inputDisabled' ngModel type="checkbox" [name]="item" [value]="item">
+                    <fa-icon class="checkIcon" *ngIf="selected.includes(item) || stored.includes(item)" [icon]="faCheck"></fa-icon>
+                </label>
+            </div>
+        </div>
+    </div>
+</form>

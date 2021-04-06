@@ -1,0 +1,25 @@
+<div class="mb-2">Escolha a massa perfeita para você:</div>
+
+<div class="container">
+    <form #form="ngForm" (change)="handleDoughSelection(form.value.massa)">
+
+        <div class="row">
+            <div *ngFor="let massa of doughTypes" class="card col-lg p-2 m-1 shadow" [class.selected]="form.value.massa === massa.doughName || selectedDough === massa.doughName">
+                <h6 class="card-header capitalize d-flex justify-content-between">
+                    {{massa.doughName}}
+                    <fa-icon class="checkIcon" *ngIf="form.value.massa === massa.doughName || selectedDough === massa.doughName" [icon]="faCheck"></fa-icon>
+                </h6>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <p class="card-text">{{massa.description}}</p>
+                    <button class="btn btn-success p-0">
+                        <label class="d-flex flex-column align-items-center m-0">
+                            <input required ngModel type="radio" name="massa" [value]="massa.doughName">
+                            Selecionar
+                        </label>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

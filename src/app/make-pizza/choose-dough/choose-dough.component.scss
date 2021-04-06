@@ -1,0 +1,22 @@
+label {
+    input[type=radio] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.selected {
+    border: 2px solid green;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.checkIcon {
+    color: green;
+}

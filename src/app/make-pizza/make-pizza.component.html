@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-end">
+    <ngb-toast class="bg-success text-light" *ngIf="show" [autohide]="true" (hidden)="show=false" [delay]='5000'>
+        <strong>Você ganhou pontos de benefício!</strong><br> Veja mais quando revisar sua pizza. 
+      </ngb-toast>
+</div>
+<h5>Monte sua pizza perfeita!</h5>
+<div class="container">
+    <div class="row">
+        <div class="col-sm d-flex justify-content-center my-1 link p-0 border" routerLinkActive="active" *ngFor="let link of Links">
+                <a [routerLink]="link.linkRoute">{{link.linkLabel}}</a>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>
